@@ -24,8 +24,7 @@ namespace Отправить_картинки_на_весы
         public string SendStr = "set:data:imagePackage.zip:";
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-          
+        {        
 
         }
 
