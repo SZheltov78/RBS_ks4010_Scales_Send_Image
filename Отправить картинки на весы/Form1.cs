@@ -16,7 +16,7 @@ namespace Отправить_картинки_на_весы
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent() ;
         }
 
 
