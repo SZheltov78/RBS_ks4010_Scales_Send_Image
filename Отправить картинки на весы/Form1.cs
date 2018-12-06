@@ -19,7 +19,9 @@ namespace Отправить_картинки_на_весы
             InitializeComponent() ;
         }
 
-        public string FileName = "imagePackage.zip"; //файл должен соделжать папку image_product в кторой должны быть картинки {PLU}.png 
+        public string FileName = "imagePackage.zip"; //файл должен содержать папку image_product 
+                                                     //в кторой должны быть картинки {PLU}.png
+                                                     
         public string SendStr = "set:data:imagePackage.zip:"; //первая строка, которую нужно отправить
 
         private void Form1_Load(object sender, EventArgs e)
@@ -38,7 +40,7 @@ namespace Отправить_картинки_на_весы
             FileStream FS = new FileStream(FileName, FileMode.Open);
             FileSize = FS.Length;
 
-            SendStr += FileSize.ToString() + Environment.NewLine; //последний параметр строки - рабмер фала в байтах
+            SendStr += FileSize.ToString() + Environment.NewLine; //последний параметр строки - раpмер фала в байтах
 
             byte[] str = Encoding.Default.GetBytes(SendStr);
             NS.Write(str, 0, str.Length);//сначала отправляется строка 
