@@ -20,7 +20,7 @@ namespace Отправить_картинки_на_весы
         }
 
         public string FileName = "imagePackage.zip"; //файл должен соделжать папку image_product в кторой должны быть картинки {PLU}.png 
-        public string SendStr = "set:data:imagePackage.zip:"; //первая строка, которую нужно отправить (спасибо варешарку)
+        public string SendStr = "set:data:imagePackage.zip:"; //первая строка, которую нужно отправить
 
         private void Form1_Load(object sender, EventArgs e)
         {        
